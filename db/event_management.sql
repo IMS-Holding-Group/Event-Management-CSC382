@@ -40,11 +40,11 @@ CREATE TABLE registrations (
 
 -- sample data
 -- ملاحظة: يجب استبدال <hash-placeholder> بقيمة password_hash('yourpassword', PASSWORD_DEFAULT)
--- مثال: يمكنك تشغيل هذا في PHP: echo password_hash('admin123', PASSWORD_DEFAULT);
+-- مثال: يمكنك تشغيل هذا في PHP: echo password_hash('', PASSWORD_DEFAULT);
 -- ثم نسخ النتيجة ولصقها في INSERT أدناه
 
 INSERT INTO users (username, password_hash, role) VALUES 
-('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin');
+('admin', '', 'admin');
 -- كلمة المرور الافتراضية: password (يجب تغييرها في بيئة الإنتاج)
 
 -- بيانات تجريبية للفعاليات
